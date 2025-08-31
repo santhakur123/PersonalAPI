@@ -86,6 +86,7 @@ EnterProfile();
 
 
 
+app.get("/health", (req, res) => res.status(200).send("OK"));
 
 app.get("/profile", async (req, res) => {
   const profile = await Profile.findOne();
