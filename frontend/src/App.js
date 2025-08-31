@@ -7,7 +7,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
 
   
-   const API_URL = "http://localhost:5000";
+   const API_URL = "https://personalapi-backend.onrender.com";
 
   useEffect(() => {
     axios.get(`${API_URL}/profile`).then((res) => setProfile(res.data));
